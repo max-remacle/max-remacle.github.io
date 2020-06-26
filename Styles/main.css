@@ -40,6 +40,8 @@ nav{
     padding: 0.5em;
 }
 .nav-links a:hover{
-    background: rgba(255, 255, 255, .5);
+    background: black;
+    color: #add8e6;
+    transition: 500ms ease;
 }
 
