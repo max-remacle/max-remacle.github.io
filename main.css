@@ -8,11 +8,12 @@ body{
     background-image: url("../images/airplane.jpg");
 } 
 
-.logo{
+.logo h4{
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
+    display: flex;
 }
 
 .dropdown{
@@ -31,7 +32,7 @@ body{
 .cultural ul{
     position: absolute;
     background: white;
-    margin-top: 10px;
+    /* margin-top: 10px;  */
     width: 100px;                                   /*width of box*/
     height: 100px;                                  /*height of box*/
     display: flex;
@@ -89,3 +90,8 @@ body{
     transform: translateY(0px);
 }
 
+.nav-banner{
+    width: 100%;
+    height: 100px;
+    background-color: #add8e6;
+}
