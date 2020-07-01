@@ -139,11 +139,16 @@ main .site-title .btn:hover{
     background: transparent;
     border: 1px solid var(--white);
     color: var(--white);
+<<<<<<< HEAD
     transition: 1s ease;
 }
 
 /*-----------Contact Page------------*/
 
+=======
+}
+
+>>>>>>> 9b7d971895f8a2e13990e208d09cf0808dd601e0
 .contact-photo{
     position: relative;
     right: 500px;
@@ -167,14 +172,23 @@ main .site-title .btn:hover{
     color: var(--text-gray);
     text-decoration: underline;
 }
+<<<<<<< HEAD
 /*------x----Contact Page------x-----*/
 /*----------Blog Landing Page---------*/
+=======
+
+>>>>>>> 9b7d971895f8a2e13990e208d09cf0808dd601e0
 .grid-container{
     max-width: 300x;
     margin-left: auto;
     margin-right: auto;
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(auto-fill, 200px);  
+=======
+    grid-template-columns: repeat(auto-fill, 200px);
+    
+>>>>>>> 9b7d971895f8a2e13990e208d09cf0808dd601e0
 }
 .grid-item {
     color: var(--text-gray);
@@ -190,6 +204,16 @@ main .site-title .btn:hover{
     border-color: black;
     max-width: 400px;
     align-self: center;
+<<<<<<< HEAD
+=======
+}
+.grid-item:hover{ 
+    background: var(--midnight);
+    border-color: var(--white);
+    border-style: solid;
+    border-width: 2px;
+    color: var(--white)
+>>>>>>> 9b7d971895f8a2e13990e208d09cf0808dd601e0
 }
 .grid-item:hover{ 
     background: var(--midnight);
@@ -226,6 +250,34 @@ main .site-title .btn:hover{
 /*----x----Main Content----x--*/
 
 
+<<<<<<< HEAD
+=======
+.container{
+    padding-top: 10rem;
+    text-align: left;
+    max-width: 1000px;
+    background-color:rgba(58, 58, 58, 0.6);
+    border-radius: 5rem;
+    color: var(--white);
+}
+
+.container h1{
+    padding: 0.5rem;
+    padding-bottom: 3rem;
+}
+
+.container .sub-heading{
+    padding: 0.8rem;
+    padding-bottom: 3rem;
+}
+.container p{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+/*----x----Main Content----x--*/
+
+
+>>>>>>> 9b7d971895f8a2e13990e208d09cf0808dd601e0
 @media only screen and (max-width:750px){
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column  ;

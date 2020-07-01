@@ -5,48 +5,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Max's Blog</title>
-  <link rel="stylesheet" type="text/css" href="styles/main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="/styles/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lexend+Deca&family=Livvic&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <div class="nav-banner">
-    <nav class="nav-area">
-      <div class="dropdown logo">
-        <h4>Max Remacle</h4>
-        <button><a href="#" class="home">Home</a></button>
-        <div class="technical">
-          <button>Technical</button>
-          <ul>
-            <li><a href="#">Sprint 1</a></li>
-            <li><a href="#">Sprint 2</a></li>
-          </ul>
-        </div>
-        <div class="cultural">
-          <button>Cultural</button>
-          <ul>
-            <li><a href="#">Sprint 1</a></li>
-            <li><a href="#">Sprint 2</a></li>
-          </ul>
-        </div>
+  <!-------------------------Navigation-------------------------->
+
+  <div class="nav">
+    <div class="nav-menu flex-row">
+      <div class="nav-brand">
+        <a href="#" class="text-gray">Max's Blog</a>
       </div>
-    </nav>
+      <div>
+        <ul class="nav-items">
+          <li class="nav-link">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="/blog/blog-landing.html">Blog Post's</a>
+          </li>
+          <li class="nav-link">
+            <a href="./blog/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social text-gray">
+        <a href="#"><i class="far fa-hand-rock"></i></a>
+        <a href="#"><i class="far fa-hand-paper"></i></a>
+        <a href="#"><i class="far fa-hand-scissors"></i></a>
+      </div>
+    </div>
   </div>
+
+  <!--------------x----------Navigation---------------x---------->
+  <!-------------------------Main Site--------------------------->
+
   <main>
-    <div class="photo">
-      <img src="/images/me.jpg">
-    </div>
-    <div class="info">
-      <h2>
-        Hi my name is Max and welcome to my blog!
-      </h2>
-      <p>
-        Allow me to share with you my exciting journey of becoming a successful Web Developer. <br>
-        Here you will find updates on my path from Zero to Hero when it comes to Web Development.
-      </p>
-  
-    </div>
+ <!--------------------------Site Title------------------------->
+    <section class="site-title">
+      <div class="site-background">
+        <h3>Welcome to</h3>
+        <h1>Max's Blog</h1>
+        <h3>Follow along for updates on my journey from Zero to Hero in Web Development</h3>
+        <button class="btn"><a href="/blog/blog-landing.html">Explore</a></button>
+      </div>
+
+    </section>
+
+    <!-------------x------------Site Title--------------x----------->
+
   </main>
+
+  <!--------------x----------Main Site----------------x---------->
+
 </body>
 
 </html>
