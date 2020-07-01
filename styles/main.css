@@ -42,6 +42,10 @@ h3{
     font-family: 'Abel', sans-serif;
     font-size: 1.7rem;
 }
+h4{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5rem
+}
 
 button.btn{
     border: none;
@@ -175,7 +179,6 @@ main .site-title .btn:hover{
     margin-right: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);  
-    grid-template-columns: repeat(auto-fill, 200px);
     
 }
 .grid-item {
@@ -210,11 +213,12 @@ main .site-title .btn:hover{
 /*-----x----Blog Landing Page-----x---*/
 /*----------Sprint 1 Technical--------*/
 .container{
-    padding-top: 10rem;
+    margin: 3rem;
+    padding-top: 5rem;
     text-align: left;
     max-width: 1000px;
-    background-color:rgba(58, 58, 58, 0.6);
-    border-radius: 5rem;
+    background-color:rgba(58, 58, 58, 0.9);
+    border-radius: 2rem;
     color: var(--white);
 }
 
@@ -232,31 +236,47 @@ main .site-title .btn:hover{
     font-size: 1.5rem;
 }
 /*----x-----Sprint 1 Technical----x---*/
-/*----x----Main Content----x--*/
 
+/*-----------Sprint 1 Cultural----------*/
 
-.container{
-    padding-top: 10rem;
+.site-title-blog{
+    background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-content{
+    margin: 3rem;
+    padding: 1rem;
+    padding-top: 3rem;
+    max-width: 50%;
     text-align: left;
-    max-width: 1000px;
-    background-color:rgba(58, 58, 58, 0.6);
-    border-radius: 5rem;
+    background-color:rgba(58, 58, 58, 0.9);
+    border-radius: 2rem;
     color: var(--white);
 }
-
-.container h1{
-    padding: 0.5rem;
-    padding-bottom: 3rem;
+.blog-content h4{
+    padding-top: 2rem;
+}
+.blog-content h3{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 3rem;
+}
+.blog-content p{
+    padding: 1.0rem 0;
+    font-size: 1.2rem;
+}
+.blog-content p em{
+    text-transform: uppercase;
+}
+.content{
+    padding-top: 2.5rem;
 }
 
-.container .sub-heading{
-    padding: 0.8rem;
-    padding-bottom: 3rem;
-}
-.container p{
-    padding: 0.5rem;
-    font-size: 1.5rem;
-}
+
+/*-----x-----Sprint 1 Cultural-----x----*/
 /*----x----Main Content----x--*/
 
 
