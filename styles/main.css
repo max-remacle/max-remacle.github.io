@@ -1,127 +1,233 @@
 *{
-    padding:0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+  
 }
 
-body{
-    background-image: url("../images/airplane.jpg");
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-} 
-
-.logo h4{
-    color: rgb(0, 0, 0);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
-    display: flex;
+:root{
+    --text-gray:#3f4954;
+    --text-ligh:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midnight:#104f55;
+    --sky:linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
-.dropdown{
-    height: 10vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-}
-.technical,.cultural{
-    position: relative;
-}
+/*------------Global-------------*/
 
-.technical ul,
-.cultural ul{
-    position: absolute;
-    background: white;
-    margin-top: 10px; 
-    width: 100px;                                   /*width of box*/
-    height: 100px;                                  /*height of box*/
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    border-radius: 10px;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-10px);
-    transition: all 0.4s ease;
-}
-
-.technical a, .cultural a{
-    color: black;
+a{
     text-decoration: none;
+    color: var(--text-gray);
+}
+.flex-row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.technical li,
-.cultural li{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+ul{
+    list-style: none;
+}
+
+h1{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 2.8rem;
+}
+
+h2{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h3{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.7rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+}
+
+/*------------Global-------------*/
+
+/*-------------Navbar------------*/
+.nav{
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    position: relative;
+    right: 80px;
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.6rem;
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 2rem;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+
+.nav .social{
+    padding: 1.4rem 0;
+    font-size: 1.6rem;
+}
+
+.nav.social i{
+    padding: 0.2rem;
+}
+
+.nav .social i:hover{
+    color: #a1c4cf;
+}
+/*------x------Navbar------x-----*/
+
+/*---------Main Content-------*/
+main .site-title{
+    background: url(../images/airplane.jpg);
+    background-size: cover;
+    height: 90vh;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.technical li:hover,
-.cultural li:hover{
-    background-color:#add8e6;
-}
-
-.dropdown button,
-.home{
-    background: none;
-    border: none;
-    color: black;
-    text-decoration: none;
-    font-size: 18px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.dropdown button:hover,
-.home:hover{
-    color: rgb(255, 255, 255);
-}
-
-.technical button:focus + ul,
-.cultural button:focus + ul{
-    opacity: 1;
-    pointer-events: all;
-    transform: translateY(0px);
-}
-
-.nav-banner{
-    width: 100%;
-    height: 90px;
-    background-color: #add8e6;
-}
-.info{
-    position: relative;
-    top: 150px;
-    right: 140px;
-    background-color: rgba(173, 216, 230, 0.4); 
-    padding: 0.5em;
-    border-radius: 15px;
+main .site-title .site-background{
+    padding-top: 10rem;
     text-align: center;
-    font-size: 1.5em;
+    color: var(--white);
 }
 
-.photo img {
-    width: 500px;
+main .site-title h1 h3{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+main .site-title .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    transition: 1s ease;
+}
+
+/*-----------Contact Page------------*/
+
+.contact-photo{
+    position: relative;
+    right: 500px;
     height: 500px;
+    width: 500px;
     border-radius: 50%;
 }
-main{
-    height: 100vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+
+.contact-info{
+    position: relative;
+    bottom:500px;
 }
 
-.info h2{
-    margin-bottom: 30px;
+.contact-info h3{
+    font-size: 5rem;
+    text-decoration: underline;
+}
+.contact-info p{
+    text-align: left;
+    font-size: 1.6rem;
+    color: var(--text-gray);
+    text-decoration: underline;
+}
+/*------x----Contact Page------x-----*/
+/*----------Blog Landing Page---------*/
+.grid-container{
+    max-width: 300x;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);  
+}
+.grid-item {
+    color: var(--text-gray);
+    background-color: white;
+    font-size: 1.1rem;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    padding: 1em;
+    margin: 1em;
+    border-radius: .5rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    max-width: 400px;
+    align-self: center;
+}
+.grid-item:hover{ 
+    background: var(--midnight);
+    border-color: var(--white);
+    border-style: solid;
+    border-width: 2px;
+    color: var(--white)
+}
+/*-----x----Blog Landing Page-----x---*/
+/*----------Sprint 1 Technical--------*/
+.container{
+    padding-top: 10rem;
+    text-align: left;
+    max-width: 1000px;
+    background-color:rgba(58, 58, 58, 0.6);
+    border-radius: 5rem;
+    color: var(--white);
+}
+
+.container h1{
+    padding: 0.5rem;
+    padding-bottom: 3rem;
+}
+
+.container .sub-heading{
+    padding: 0.8rem;
+    padding-bottom: 3rem;
+}
+.container p{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+/*----x-----Sprint 1 Technical----x---*/
+/*----x----Main Content----x--*/
+
+
+@media only screen and (max-width:750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column  ;
+    }
 }
