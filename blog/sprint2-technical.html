@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Max's Blog</title>
-  <link rel="stylesheet" type="text/css" href="../styles/main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/all.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lexend+Deca&family=Livvic&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-    <body>
-        <div class="nav-banner">
-          <nav class="nav-area">
-            <div class="dropdown logo">
-              <h4>Max Remacle</h4>
-              <button><a href="../index.html" class="home">Home</a></button>
-              <div class="technical">
-                <button>Technical</button>
-                <ul>
-                  <li><a href="sprint1-technical.html">Sprint 1</a></li>
-                  <li><a href="sprint2-technical.html">Sprint 2</a></li>
-                </ul>
-              </div>
-              <div class="cultural">
-                <button>Cultural</button>
-                <ul>
-                  <li><a href="#">Sprint 1</a></li>
-                  <li><a href="#">Sprint 2</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+  <!-------------------------Navigation-------------------------->
+
+  <div class="nav">
+    <div class="nav-menu flex-row">
+      <div class="nav-brand">
+        <a href="#" class="text-gray">Max's Blog</a>
+      </div>
+      <div>
+        <ul class="nav-items">
+          <li class="nav-link">
+            <a href="../index.html">Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="blog-landing.html">Blog Post's</a>
+          </li>
+          <li class="nav-link">
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social text-gray">
+        <a href="#"><i class="far fa-hand-rock"></i></a>
+        <a href="#"><i class="far fa-hand-paper"></i></a>
+        <a href="#"><i class="far fa-hand-scissors"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!---------x---------------Navigation--------------x----------->
+  <main>
+    <section class="site-title-blog">
+      <div class="blog-content">
+        <div class="tech-content">
+          <h1>What are the best practices associated with using classes vs. IDs?</h1>
+          <img class="tech-photo" src="../images/class vs id.jpg" alt="class vs ID logo">
+          <p>When I started my journey on becoming a web developer, I knew very little about HTML classes and probably
+            even less about ID’s, and though I am not at all an expert on the matter I feel as though I am learning a
+            thing or two. So, in this blog entry I will talk a little bit about what class’s and ID’s are and some of the
+            practices to keep in mind.</p>
+          <p>One analogy that helped me understand ID’s and classes better is the barcode and serial number analogy. Take
+            an iPhone in a store for instance, the iPod has a barcode which the store can scan and retrieve some
+            information about the iPhone. The barcode knows exactly what the products is, what it costs and it might even
+            know the color. All iPhones of this type have the exact same barcode on them.</p>
+          <p>The iPhone will also have a serial number on it which is completely unique to any other iPhone in the world.
+            The serial number does not know the cost of the iPhone as this will vary from place to place. Now you can make
+            the system learn the price through the serial number, however this is not a very efficient way of storing
+            data. If the price changes you will need to change this information for every single serial numbers.
+            Therefore, it is much easier to use the barcode as you would be able to just change the price for every
+            product with that barcode.</p>
+          <p>This is much like ID’s and Classes. Information that is reusable should be kept in a class and information
+            that is totally unique should be kept in an ID. </p>
+          <h4>ID Selector: </h4>
+          <p>Best practice for ID’s is that they are unique and that each element can only have one ID and each page
+            should only have one element with that ID. To assign an ID in HTML we use ID=’id_name’, and to customize an ID
+            in CSS we use #id_name{}.</p> <img src="../images/id.PNG" alt="ID example">
+          <h4>Class selector: </h4>
+          <p>Best practice for Classes is that they don’t have to be unique and you can use the same class on multiple
+            elements and you can use multiple classes on the same element. To assign a Class in HTML we use
+            class=’class_name’, and to customize a Class in CSS we use .class_name{}.</p> <img src="../images/class.PNG" alt="Class example">
+          <h4>Make 'em count: </h4>
+          <p>Always make sure that when you are using a class or an ID to make sure that the name you are giving them is
+            descriptive. This will help with the future proofing of your work as it will be easier for you to distinguish
+            between variables.</p> 
         </div>
-    
+      </div>
+    </section>
+  </main>
+
+  <!-- this is a comment. -->
+
 </body>
+
 </html>

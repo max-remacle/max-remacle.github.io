@@ -217,9 +217,9 @@ main .site-title .btn:hover{
     padding-top: 5rem;
     text-align: left;
     max-width: 1000px;
-    background-color:rgba(58, 58, 58, 0.9);
+    background-color:rgba(58, 58, 58);
     border-radius: 2rem;
-    color: var(--white);
+    color: white;
 }
 
 .container h1{
@@ -232,7 +232,7 @@ main .site-title .btn:hover{
     padding-bottom: 3rem;
 }
 .container p{
-    padding: 0.5rem;
+    padding: 1rem;
     font-size: 1.5rem;
 }
 /*----x-----Sprint 1 Technical----x---*/
@@ -252,9 +252,9 @@ main .site-title .btn:hover{
     padding-top: 3rem;
     max-width: 50%;
     text-align: left;
-    background-color:rgba(58, 58, 58, 0.9);
+    background-color:rgb(58, 58, 58);
     border-radius: 2rem;
-    color: var(--white);
+    color: white;
 }
 .blog-content h4{
     padding-top: 2rem;
@@ -277,6 +277,23 @@ main .site-title .btn:hover{
 
 
 /*-----x-----Sprint 1 Cultural-----x----*/
+/*--------Sprint 2 Technical------------*/
+
+.blog-content h1{
+    text-decoration: underline;
+}
+
+.tech-content h4{
+    text-decoration: underline;
+}
+.tech-photo{
+    margin: 1rem;
+    height: 200px;;
+}
+
+
+
+/*-----x--Sprint 2 Technical-------x----*/
 /*----x----Main Content----x--*/
 
 
