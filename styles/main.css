@@ -1,9 +1,10 @@
 *{
     margin: 0;
     box-sizing: border-box;
-  
 }
-
+p{
+    font-family:'Abel', sans-serif;
+}
 :root{
     --text-gray:#3f4954;
     --text-ligh:#686666da;
