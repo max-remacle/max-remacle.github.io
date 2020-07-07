@@ -215,7 +215,8 @@ main .site-title .btn:hover{
 /*----------Sprint 1 Technical--------*/
 .container{
     margin: 3rem;
-    padding-top: 5rem;
+    padding: 1rem;
+    padding-top: 3rem;
     text-align: left;
     max-width: 1000px;
     background-color:rgba(58, 58, 58);
@@ -223,9 +224,21 @@ main .site-title .btn:hover{
     color: white;
 }
 
+.container h4{
+    padding-top: 2rem;
+    text-decoration: underline;
+}
+
 .container h1{
     padding: 0.5rem;
     padding-bottom: 3rem;
+    text-decoration: underline;
+}
+
+.container h3{
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 3rem;
 }
 
 .container .sub-heading{
@@ -235,6 +248,10 @@ main .site-title .btn:hover{
 .container p{
     padding: 1rem;
     font-size: 1.5rem;
+}
+
+.container p em{
+    text-transform: uppercase;
 }
 /*----x-----Sprint 1 Technical----x---*/
 
@@ -246,36 +263,9 @@ main .site-title .btn:hover{
     display: flex;
     justify-content: center;
 }
-
-.blog-content{
-    margin: 3rem;
-    padding: 1rem;
-    padding-top: 3rem;
-    max-width: 50%;
-    text-align: left;
-    background-color:rgb(58, 58, 58);
-    border-radius: 2rem;
-    color: white;
-}
-.blog-content h4{
-    padding-top: 2rem;
-}
-.blog-content h3{
-    text-align: center;
-    text-decoration: underline;
-    padding-top: 3rem;
-}
-.blog-content p{
-    padding: 1.0rem 0;
-    font-size: 1.2rem;
-}
-.blog-content p em{
-    text-transform: uppercase;
-}
 .content{
     padding-top: 2.5rem;
 }
-
 
 /*-----x-----Sprint 1 Cultural-----x----*/
 /*--------Sprint 2 Technical------------*/
