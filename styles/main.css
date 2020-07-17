@@ -175,7 +175,7 @@ main .site-title .btn:hover{
 /*----------Blog Landing Page---------*/
 
 .grid-container{
-    max-width: 300x;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -290,6 +290,12 @@ main .site-title .btn:hover{
     width: 500px;
 }
 /*----x----Sprint 3 Technical------x-----*/
+
+.container p a{
+    color: white;
+    text-decoration: underline;
+}
+
 /*----x----Main Content----x--*/
 
 
