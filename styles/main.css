@@ -299,8 +299,30 @@ main .site-title .btn:hover{
 /*----x----Main Content----x--*/
 
 
+
+
+@media only screen and (max-width:1200px){
+    main .site-title{
+        background: url(../images/airplane.jpg);
+        background-size:contain ;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 @media only screen and (max-width:750px){
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column  ;
+    }
+}
+
+@media only screen and (max-width:320px){
+    main .site-title{
+        background:grey;
+        background-size: cover;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
     }
 }
